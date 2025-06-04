@@ -43,7 +43,7 @@
 
   const emit = defineEmits<{
     (event: 'update:showModal', value: boolean): void,
-    (event: 'create'): void,
+    (event: 'create', value: Variable): void,
   }>()
 
   const internalValue = computed({
